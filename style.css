@@ -42,7 +42,7 @@ footer{ text-align: center; padding: 1rem; background: #f4f4f4; }
 /* ============ Hero ============ */
 #hero{
   display: flex; align-items: center; justify-content: center;
-  text-align: center; height: 70vh;
+  text-align: center; min-height: 70vh;
   background: linear-gradient(135deg,#007acc,#00c6ff);
   color: #fff; padding: 2rem;
 }
@@ -93,27 +93,50 @@ footer{ text-align: center; padding: 1rem; background: #f4f4f4; }
 }
 .skills-tags a:hover{ background: #005fa3; }
 
-/* ============ Projects ============ */
+/* ============ Projects grid & cards ============ */
 .project-grid{
-  display: grid; gap: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .project-card{
-  border: 1px solid #ccc; border-radius: 10px; padding: 1rem;
-  background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform .2s ease, box-shadow .2s ease;
   text-align: left;
 }
-.project-card:hover{ transform: translateY(-6px); box-shadow: 0 8px 16px rgba(0,0,0,.15); }
+.project-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
 .project-img{
-  width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 1rem;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
 }
 .project-card h3{ margin: .25rem 0 .35rem; }
 .project-card p{ color: #555; font-size: .95rem; margin: 0 0 .8rem; }
 .project-actions{ display: flex; flex-wrap: wrap; gap: .5rem; }
 
-/* Keep your old single-card styling (for compatibility if used) */
-.project-card + .project-card{ margin-top: 0; }
+/* Extra project text styles */
+.project-desc { margin: .5rem 0 .6rem; }
+.project-highlights { margin: 0 0 .6rem 1.1rem; color: #555; }
+.project-highlights li { margin: .25rem 0; }
+.proj-tags { margin: .4rem 0 .8rem; }
+.proj-tags span {
+  display: inline-block;
+  background: #eee;
+  color: #333;
+  padding: .25rem .6rem;
+  border-radius: 14px;
+  font-size: .8rem;
+  margin: .2rem;
+}
 
 /* ============ Contact ============ */
 .contact-grid{
@@ -144,9 +167,10 @@ body.dark nav a{ color: #ddd; }
 body.dark #darkToggle{ background: #1e1e1e; border-color: #333; color: #eee; }
 body.dark #darkToggle:hover{ background: #2a2a2a; }
 body.dark footer{ background: #1e1e1e; border-top: 1px solid #333; }
+
 body.dark .skills-card,
 body.dark .project-card{
-  background: #1e1e1e; border-color: #333; box-shadow: 0 4px 12px rgba(0,0,0,.35);
+  background: #1e1e1e; border-color: #333; box-shadow: 0 4px 12px rgba(0,0,0,0.35);
 }
 body.dark .skills-tags a{ background: #2a7ecf; }
 body.dark .skills-tags a:hover{ background: #1f66a6; }
@@ -154,13 +178,12 @@ body.dark .btn{ background: #333; color: #fff; border-color: transparent; }
 body.dark .btn:hover{ background: #ffe600; color: #111; }
 body.dark .btn-outline{ border-color: #fff; color: #fff; }
 body.dark .btn-outline:hover{ background: #fff; color: #007acc; }
-
-/* Optional: keep hero vivid in dark mode (same gradient works well) */
+body.dark .proj-tags span { background: #333; color: #ddd; }
 
 /* ============ Responsive Tweaks ============ */
 @media (max-width: 640px){
-  #hero{ height: 60vh; padding: 1.5rem; }
+  #hero{ min-height: 60vh; padding: 1.5rem; }
   #hero h1{ font-size: 2rem; }
-  header{ grid-template-columns: 1fr auto; grid-auto-flow: column; }
-  nav{ display: none; } /* simplify on very small screens (optional) */
+  header{ grid-template-columns: 1fr auto auto; }
+  /* Keep nav visible on mobile; swap to hamburger later if you want */
 }
