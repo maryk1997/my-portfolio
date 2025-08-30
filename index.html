@@ -4,20 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mariam Kajaia – Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=3" />
+  <script src="script.js?v=3" defer></script>
 </head>
 <body>
   <header>
-    <h1>Mariam Kajaia</h1>
+    <h1 class="site-title">Mariam Kajaia</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
+    <button id="darkToggle" aria-label="Toggle dark mode">🌙</button>
   </header>
 
+  <!-- Hero Section -->
   <section id="hero">
     <div class="hero-content">
       <h1 class="fade-in">Hi, I’m <span>Mariam Kajaia</span></h1>
@@ -29,38 +31,86 @@
     </div>
   </section>
 
+  <!-- About -->
   <section id="about">
-    <h2>About Me</h2>
-    <p>
+    <h2 class="reveal">About Me</h2>
+    <p class="reveal">
       I’m studying <strong>Manual QA</strong> and recently built an
-      <strong>animated banner ad</strong>. I love pairing testing discipline with
-      creative UI & motion.
+      <strong>animated banner ad</strong>. I enjoy combining testing discipline
+      with creative frontend development and motion design.
     </p>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>McDonald’s Animated Banner</h3>
-      <p>Ad banner with smooth transitions and motion.</p>
-      <button onclick="openVideo()">▶ View Demo</button>
-    </div>
-    <div class="project-card">
-      <h3>Weather App</h3>
-      <p>Fetches real-time weather data and displays it responsively.</p>
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="reveal">Skills</h2>
+    <div class="skills-grid">
+      <div class="skills-card reveal">
+        <h3>Manual QA</h3>
+        <div class="skills-tags">
+          <a href="#">Test Case Design</a>
+          <a href="#">Bug Reporting</a>
+          <a href="#">Exploratory Testing</a>
+          <a href="#">Jira</a>
+          <a href="#">Trello</a>
+        </div>
+      </div>
+      <div class="skills-card reveal">
+        <h3>Creative Development</h3>
+        <div class="skills-tags">
+          <a href="#">HTML</a>
+          <a href="#">CSS</a>
+          <a href="#">JavaScript</a>
+          <a href="#">Animations</a>
+          <a href="#">Figma</a>
+          <a href="#">Git/GitHub</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Lightbox -->
-  <div id="lightbox" class="video-lightbox">
-    <div class="video-box">
-      <button onclick="closeVideo()" class="close-btn">✖</button>
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="reveal">Projects</h2>
+    <div class="project-grid">
+      <div class="project-card reveal">
+        <h3>McDonald’s Animated Banner</h3>
+        <p>Advertising banner with smooth transitions and motion.</p>
+        <button onclick="openVideo()" class="btn">▶ View Demo</button>
+      </div>
+      <div class="project-card reveal">
+        <h3>Weather App</h3>
+        <p>Fetches real-time weather data and displays it responsively.</p>
+      </div>
+      <div class="project-card reveal">
+        <h3>Kriptoscope (Crypto Tracker)</h3>
+        <p>Tracks live crypto prices with CoinGecko API.</p>
+      </div>
+      <div class="project-card reveal">
+        <h3>To-Do App</h3>
+        <p>Simple task manager app with local storage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Lightbox -->
+  <div id="lightbox" class="video-lightbox" aria-hidden="true">
+    <div class="video-box" role="dialog" aria-label="McDonald's banner demo">
+      <button onclick="closeVideo()" class="close-btn" aria-label="Close video">✖</button>
       <video src="mcd-banner.mp4" controls></video>
     </div>
   </div>
 
-  <footer>
-    © <span id="year"></span> Mariam Kajaia
-  </footer>
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="reveal">Contact</h2>
+    <div class="contact-grid">
+      <div class="contact-item reveal">📧 <a href="mailto:you@example.com">you@example.com</a></div>
+      <div class="contact-item reveal">💼 <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">LinkedIn</a></div>
+      <div class="contact-item reveal">💻 <a href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub</a></div>
+    </div>
+  </section>
+
+  <footer>© <span id="year"></span> Mariam Kajaia</footer>
 </body>
 </html>
