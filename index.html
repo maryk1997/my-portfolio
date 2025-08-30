@@ -1,69 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mariam Kajaia – Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <strong>Mariam Kajaia</strong> – Web Developer | Product Assistant | AI Enthusiast
-    <!-- Placeholder for Dark Mode toggle -->
+    <h1>Mariam Kajaia</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
+  <section id="hero">
+    <div class="hero-content">
+      <h1 class="fade-in">Hi, I’m <span>Mariam Kajaia</span></h1>
+      <p class="fade-in delay-1">Manual QA Tester & Creative Frontend Developer</p>
+      <div class="hero-buttons fade-in delay-2">
+        <a href="#projects" class="btn">See My Work</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
   <section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am currently <strong>studying Manual QA</strong>, learning how to design test cases, 
-    report bugs, and ensure software quality. At the same time, I discovered my passion 
-    for creative development — I recently built an <strong>advertising project with an 
-    animated banner</strong>, and I really enjoyed the process of making something both 
-    functional and visually engaging. 
-  </p>
-  <p>
-    My goal is to combine my detail-oriented QA mindset with my creativity in frontend 
-    development and animations, building projects that are reliable and delightful to use.
-  </p>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="project-card">
-    <h3>McDonald’s Animated Banner</h3>
+    <h2>About Me</h2>
     <p>
-      An advertising project where I created an <strong>animated banner</strong> 
-      with smooth transitions. It combined design and coding to simulate a real-world ad.
+      I am currently <strong>studying Manual QA</strong> and I recently built an
+      <strong>advertising project with an animated banner</strong>. I enjoy combining
+      test discipline with creative UI/animation.
     </p>
-    <button onclick="openVideo()">▶ View Demo</button>
-  </div>
+  </section>
 
-  <div class="project-card">
-    <h3>Weather App</h3>
-    <p>
-      A simple app that fetches real-time weather data from an API and displays 
-      it in a responsive interface.
-    </p>
-  </div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>McDonald’s Animated Banner</h3>
+      <p>Ad banner with smooth transitions and motion.</p>
+      <button onclick="openVideo()">▶ View Demo</button>
+    </div>
+    <div class="project-card">
+      <h3>Weather App</h3>
+      <p>Fetches real-time weather data and displays it responsively.</p>
+    </div>
+  </section>
 
-</section>
-
-<!-- Lightbox for video -->
-<div id="lightbox" class="video-lightbox">
-  <div class="video-box">
-    <button onclick="closeVideo()" class="close-btn">✖</button>
-    <video src="mcd-banner.mp4" controls></video>
+  <!-- Lightbox -->
+  <div id="lightbox" class="video-lightbox">
+    <div class="video-box">
+      <button onclick="closeVideo()" class="close-btn">✖</button>
+      <video src="mcd-banner.mp4" controls></video>
+    </div>
   </div>
-</div>
 
   <footer>
     © <span id="year"></span> Mariam Kajaia
