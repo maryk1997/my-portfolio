@@ -70,28 +70,95 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects">
-    <h2 class="reveal">Projects</h2>
-    <div class="project-grid">
-      <div class="project-card reveal">
-        <h3>McDonald’s Animated Banner</h3>
-        <p>Advertising banner with smooth transitions and motion.</p>
+<section id="projects">
+  <h2 class="reveal">Projects</h2>
+
+  <div class="project-grid">
+
+    <!-- McDonald's Animated Banner -->
+    <article class="project-card reveal">
+      <img src="banner-thumbnail.png" alt="McDonald's Animated Banner preview" class="project-img" />
+      <h3>McDonald’s Animated Banner</h3>
+      <p class="project-desc">
+        Short promotional ad banner with timed transitions, CTA reveal, and smooth loop.
+        Built as a real vacancy-style ad task.
+      </p>
+      <ul class="project-highlights">
+        <li>Tech: HTML, CSS, (optionally) GSAP</li>
+        <li>Focus: motion timing, performance, accessibility</li>
+      </ul>
+      <div class="proj-tags">
+        <span>Animation</span><span>Ad Dev</span><span>Banner</span>
+      </div>
+      <div class="project-actions">
         <button onclick="openVideo()" class="btn">▶ View Demo</button>
+        <a href="https://github.com/yourname/mcd-banner" target="_blank" class="btn btn-outline">Code</a>
       </div>
-      <div class="project-card reveal">
-        <h3>Weather App</h3>
-        <p>Fetches real-time weather data and displays it responsively.</p>
+    </article>
+
+    <!-- Weather App -->
+    <article class="project-card reveal">
+      <img src="weather-thumbnail.png" alt="Weather App preview" class="project-img" />
+      <h3>Weather App</h3>
+      <p class="project-desc">
+        Fetches real-time weather by city and shows current conditions with a clean, responsive UI.
+      </p>
+      <ul class="project-highlights">
+        <li>Tech: HTML, CSS, JavaScript, OpenWeather API</li>
+        <li>Features: search, error handling, responsive layout</li>
+      </ul>
+      <div class="proj-tags">
+        <span>API</span><span>Responsive</span><span>UI</span>
       </div>
-      <div class="project-card reveal">
-        <h3>Kriptoscope (Crypto Tracker)</h3>
-        <p>Tracks live crypto prices with CoinGecko API.</p>
+      <div class="project-actions">
+        <a href="weather.html" class="btn">View Project</a>
+        <a href="https://github.com/yourname/weather-app" target="_blank" class="btn btn-outline">Code</a>
       </div>
-      <div class="project-card reveal">
-        <h3>To-Do App</h3>
-        <p>Simple task manager app with local storage.</p>
+    </article>
+
+    <!-- Kriptoscope -->
+    <article class="project-card reveal">
+      <img src="crypto-thumbnail.png" alt="Kriptoscope preview" class="project-img" />
+      <h3>Kriptoscope (Crypto Tracker)</h3>
+      <p class="project-desc">
+        Tracks live crypto prices, 24h change, and favorites — powered by CoinGecko.
+      </p>
+      <ul class="project-highlights">
+        <li>Tech: HTML, CSS, JavaScript, CoinGecko API</li>
+        <li>Features: search, sort, favorites</li>
+      </ul>
+      <div class="proj-tags">
+        <span>API</span><span>Data</span><span>Lists</span>
       </div>
-    </div>
-  </section>
+      <div class="project-actions">
+        <a href="crypto.html" class="btn">View Project</a>
+        <a href="https://github.com/yourname/kriptoscope" target="_blank" class="btn btn-outline">Code</a>
+      </div>
+    </article>
+
+    <!-- To-Do App -->
+    <article class="project-card reveal">
+      <img src="todo-thumbnail.png" alt="To-Do App preview" class="project-img" />
+      <h3>To-Do App</h3>
+      <p class="project-desc">
+        Minimal client-side task manager with localStorage persistence.
+      </p>
+      <ul class="project-highlights">
+        <li>Tech: HTML, CSS, JavaScript</li>
+        <li>Features: add/edit/delete, persist between sessions</li>
+      </ul>
+      <div class="proj-tags">
+        <span>Productivity</span><span>LocalStorage</span><span>Vanilla JS</span>
+      </div>
+      <div class="project-actions">
+        <a href="todo.html" class="btn">View Project</a>
+        <a href="https://github.com/yourname/todo-app" target="_blank" class="btn btn-outline">Code</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
 
   <!-- Video Lightbox -->
   <div id="lightbox" class="video-lightbox" aria-hidden="true">
