@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Case study of Casa Gelso, a three-act launch campaign for a luxury fashion house in Tbilisi. Concept, copy, art direction, front-end and testing by Mariam Kajaia.">
+  <title>Casa Gelso, Case Study / Mariam Kajaia</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Casa Gelso, Launch Campaign Case Study">
+  <meta property="og:description" content="A teaser, a digital ad and an invitation as one continuous experience, in three languages, built end to end by one person.">
+  <meta property="og:image" content="https://digitalinvitee.github.io/casa-gelso/assets/teaser/04-black-gold-dress.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Noto+Sans+Georgian:wght@400;500;600&family=Noto+Serif+Georgian:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-line" id="scrollLine" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav" aria-label="Primary">
+    <a class="nav__name" href="index.html">Mariam Kajaia</a>
+
+    <div class="nav__links">
+      <a href="index.html#work"><span>Work</span></a>
+      <a href="index.html#experience"><span>Experience</span></a>
+      <a href="index.html#education"><span>Education</span></a>
+      <a href="index.html#capabilities"><span>Capabilities</span></a>
+      <a href="index.html#about"><span>About</span></a>
+      <a href="index.html#contact"><span>Contact</span></a>
+    </div>
+
+    <div class="nav__right">
+      <span class="available"><i></i><span>Available</span></span>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle night mode"><span class="theme-icon">◐</span><span class="theme-label">Night</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="menuClose">Close</button>
+    <a href="index.html#work">Work</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#capabilities">Capabilities</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <main class="case">
+    <header class="case-hero case-hero--casa reveal">
+      <a class="text-link case-hero__back" href="index.html#work">Back to Work</a>
+      <span class="project__number">Case study 01 / Casa Gelso</span>
+      <h1><em>Casa Gelso</em></h1>
+      <p class="case-hero__dek">
+        A luxury fashion house opens in Tbilisi on 12 September 2026, carrying Ferragamo, Moschino,
+        Tom Ford and Bottega Veneta. It had a name, a date and an address. I built everything that came
+        between those facts and the guest standing in the room: the campaign idea, the story, the words
+        in three languages, the art direction, the interface, the code and the testing.
+      </p>
+
+      <dl class="project__facts">
+        <div><dt>Role</dt><dd>Sole author. Concept, campaign, copy, design, front-end, testing</dd></div>
+        <div><dt>Client</dt><dd>Casa Gelso, luxury fashion retail, Tbilisi</dd></div>
+        <div><dt>Scope</dt><dd>Three-act launch experience: teaser digital ad private invitation</dd></div>
+        <div><dt>Languages</dt><dd>English, Georgian, Italian</dd></div>
+        <div><dt>Stack</dt><dd>HTML, CSS, JavaScript, scroll-driven animation, audio, RSVP capture</dd></div>
+        <div><dt>Live</dt><dd>casagelso.com, opening 12.09.2026</dd></div>
+      </dl>
+
+      <div class="project-actions">
+        <a class="text-link" href="https://digitalinvitee.github.io/casa-gelso/" target="_blank" rel="noreferrer">View Live</a>
+        <a class="text-link" href="https://github.com/digitalinvitee" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </header>
+
+    <a class="case-cover" href="https://digitalinvitee.github.io/casa-gelso/" target="_blank" rel="noreferrer">
+      <img src="https://digitalinvitee.github.io/casa-gelso/assets/reveal/cover4.png" alt="Casa Gelso brand reveal, the opening cover of the campaign" loading="lazy">
+    </a>
+
+    <section class="case-block reveal">
+      <span class="case-block__label">THE BRIEF</span>
+      <div class="case-block__body">
+        <h2>A shop opening is not <em>news.</em> It has to be made into a feeling.</h2>
+        <p>
+          Tbilisi already has places to buy designer clothing. So "a new store is opening" is not a reason
+          for anyone to care, and a page with a logo and a date would have been an announcement, not a
+          launch. The real problem was one of desire: how do you make people want to be in a room they
+          have never seen, for a brand they have never heard of, four weeks before it exists?
+        </p>
+        <p>
+          I decided the answer was to withhold. The campaign would show the clothes before it showed the
+          name, show the name before it explained anything, and only ask for something, an RSVP, once it
+          had earned the right to. Three acts, one continuous scroll, no page reloads between them.
+        </p>
+      </div>
+    </section>
+
+    <section class="case-chapters reveal">
+      <div class="case-chapter">
+        <span class="case-chapter__index">ACT ONE / TEASER</span>
+        <div>
+          <h3>Five frames that explain nothing.</h3>
+          <p>
+            The experience opens on a strappy heel on a pedestal edge, then a hand reaching for a
+            heart-shaped bag, then a black halter gown. Each frame carries three words and nothing else:
+            something is coming, something to love, something to desire, make it yours, wear the moment.
+            No brand name, no address, no price. The only fixed point is the date, 12/09/2026, sitting in
+            the corner the whole time.
+          </p>
+          <p>
+            I wrote the captions as a single sentence broken across five images so a viewer has to keep
+            going to finish the thought. There is a skip control from the first second, because forcing an
+            intro on someone is the fastest way to lose them.
+          </p>
+        </div>
+      </div>
+
+      <div class="case-chapter">
+        <span class="case-chapter__index">ACT TWO / DIGITAL AD</span>
+        <div>
+          <h3>The brand reveal, released one chapter at a time.</h3>
+          <p>
+            The second act is the advertisement, and it unfolds as you scroll: five numbered chapters, each
+            pinned to a full-bleed image, each delivering exactly one idea. The fashion you dreamed of, now
+            in your city. Shop Tbilisi, feel Milan. Iconic names, one destination. Closer than it has ever
+            been. Come and see it in person.
+          </p>
+          <p>
+            This is the act that does the commercial work. It is where Ferragamo, Moschino, Tom Ford and
+            Bottega Veneta finally appear, running as a marquee under the promise. The line "shop Tbilisi,
+            feel Milan" is the whole positioning of the business compressed into four words, and it is the
+            sentence the client now uses to describe themselves.
+          </p>
+        </div>
+      </div>
+
+      <div class="case-chapter">
+        <span class="case-chapter__index">ACT THREE / INVITATION</span>
+        <div>
+          <h3>Only now does it ask for something.</h3>
+          <p>
+            The final act turns the campaign into a private invitation: date, time, the address on Kostava
+            Street linked straight into Google Maps, and an add-to-calendar action so the event survives
+            being closed in a browser tab. Then the RSVP.
+          </p>
+          <ul>
+            <li>Name, and a yes or no attendance choice, the two fields the client actually needs.</li>
+            <li>A question asking each guest for their top three fashion houses, which quietly hands the buyer real demand data before the doors open.</li>
+            <li>An open field asking "what do you wish for Casa Gelso?", which turns a form into a guest book.</li>
+            <li>A hidden honeypot field to absorb bot submissions without putting a captcha in front of a luxury guest.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="case-gallery reveal">
+      <figure>
+        <img src="https://digitalinvitee.github.io/casa-gelso/assets/teaser/01-shoe.jpg" alt="Teaser frame one, a heel on a pedestal edge" loading="lazy">
+        <figcaption>Act one, something is coming</figcaption>
+      </figure>
+      <figure>
+        <img src="https://digitalinvitee.github.io/casa-gelso/assets/teaser/02-heart-bag.jpg" alt="Teaser frame two, a hand reaching for a heart-shaped bag" loading="lazy">
+        <figcaption>Act one, something to love</figcaption>
+      </figure>
+      <figure>
+        <img src="https://digitalinvitee.github.io/casa-gelso/assets/teaser/05-red-suit.jpg" alt="Teaser frame five, a tailored red suit with heart hardware" loading="lazy">
+        <figcaption>Act one, wear the moment</figcaption>
+      </figure>
+      <figure>
+        <img src="https://digitalinvitee.github.io/casa-gelso/assets/reveal/add1.JPG" alt="Brand reveal chapter one" loading="lazy">
+        <figcaption>Act two, the fashion you dreamed of</figcaption>
+      </figure>
+      <figure>
+        <img src="https://digitalinvitee.github.io/casa-gelso/assets/reveal/add3.JPG" alt="Brand reveal chapter three" loading="lazy">
+        <figcaption>Act two, iconic names, one destination</figcaption>
+      </figure>
+      <figure>
+        <img src="https://digitalinvitee.github.io/casa-gelso/assets/reveal/add5.JPG" alt="Brand reveal chapter five" loading="lazy">
+        <figcaption>Act two, come and see it in person</figcaption>
+      </figure>
+    </div>
+
+    <section class="case-block reveal">
+      <span class="case-block__label">DESIGN DECISIONS</span>
+      <div class="case-block__body">
+        <h2>Restraint is the <em>luxury signal.</em></h2>
+        <p>
+          The palette is a single deep wine against ivory, with a mulberry monogram that I drew and set as
+          the only recurring mark. There is no gold gradient, no drop shadow, no second accent colour.
+          Luxury retail communicates status through what it refuses to do, so the discipline of the design
+          system is itself part of the argument.
+        </p>
+        <p>
+          There is a score, because the campaign is built to be experienced with sound, but it never
+          plays without a visible mute control that stays reachable, and the site is complete in silence.
+          Roman numerals date the collection, MMXXVI, because the house is presenting itself as something
+          older than its opening date.
+        </p>
+      </div>
+      <div class="case-feature-grid">
+        <article>
+          <h3>Three languages</h3>
+          <p>English, Georgian and Italian, switchable anywhere in the journey without losing your place. I wrote and translated all three. Italian is there because the brands are Italian, and the borrowed authority matters.</p>
+        </article>
+        <article>
+          <h3>Sound, optional</h3>
+          <p>An audio bed that sets the tempo of the teaser, with mute exposed in the navigation from the first frame rather than buried.</p>
+        </article>
+        <article>
+          <h3>Continuous scroll</h3>
+          <p>Three acts on one page, so the campaign never breaks the spell with a page load, and so a single shared link contains the whole story.</p>
+        </article>
+        <article>
+          <h3>Built to be shared</h3>
+          <p>Full Open Graph and Twitter card metadata with a chosen preview frame, because in practice this campaign lives as a link pasted into a message thread.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-block reveal">
+      <span class="case-block__label">TECHNICAL</span>
+      <div class="case-block__body">
+        <h2>Hand-built, <em>no framework, no page builder.</em></h2>
+        <p>
+          The whole experience is HTML, CSS and vanilla JavaScript, deployed on a custom domain. That was a
+          decision, not a limitation: a launch campaign is read on a phone, often on mobile data, often for
+          under a minute, and every kilobyte of framework I didn't ship is a person who didn't leave while
+          waiting.
+        </p>
+      </div>
+      <dl class="stack-table">
+        <div><dt>Structure</dt><dd>Semantic HTML with a skip-to-content link and labelled required fields.</dd></div>
+        <div><dt>Motion</dt><dd>Scroll-driven chapter reveals and a timed intro sequence with a skip control.</dd></div>
+        <div><dt>Localisation</dt><dd>EN / KA / IT switching, with Georgian and Latin type set to hold the same rhythm.</dd></div>
+        <div><dt>Data</dt><dd>RSVP capture including attendance, brand preference and a free-text field, with a honeypot spam trap.</dd></div>
+        <div><dt>Integrations</dt><dd>Google Maps deep link and add-to-calendar for the opening.</dd></div>
+        <div><dt>Distribution</dt><dd>Canonical URL, Open Graph, Twitter card and theme colour, on a custom domain.</dd></div>
+      </dl>
+    </section>
+
+    <section class="case-block reveal">
+      <span class="case-block__label">QA</span>
+      <div class="case-block__body">
+        <h2>Then I tried to <em>break it.</em></h2>
+        <p>
+          A trilingual site with audio, an intro sequence and a form has a lot of ways to fail quietly. I
+          ran a manual pass across breakpoints and all three languages: whether Georgian text still fits
+          when it runs a third longer than English, whether the audio ever starts unmuted, whether the
+          intro can be skipped mid-animation, whether the form rejects an empty required field and accepts
+          a valid one, and what happens on a slow connection before the images arrive.
+        </p>
+        <p>
+          Doing my own QA is a habit from the manual testing training I took after learning to build, and
+          it is the reason I trust the work enough to put my client's opening night on it.
+        </p>
+      </div>
+    </section>
+
+    <div class="case-credit reveal">
+      <span>Credits</span>
+      <p>
+        Concept, campaign strategy, brand storytelling, copywriting in three languages, art direction,
+        UI design, motion, sound, front-end development, form logic, testing and deployment, all by
+        Mariam Kajaia. There was no second person on this project.
+      </p>
+    </div>
+
+    <nav class="case-nav reveal">
+      <a href="index.html#work">Back to work</a>
+      <a href="jetour.html">Next: JETOUR Georgia</a>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Mariam Kajaia</span>
+    <span>Design, Development, QA, Business</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

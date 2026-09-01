@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Case study: five wedding digital experiences, one system, five distinct visual identities. By Mariam Kajaia.">
+  <title>Five Wedding Experiences / Mariam Kajaia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Noto+Sans+Georgian:wght@400;500;600&family=Noto+Serif+Georgian:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .wed-grid{
+      padding:0 var(--gutter);
+      margin-bottom:var(--section);
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:10px;
+    }
+    .wed-grid article{
+      border:1px solid var(--line);
+      overflow:hidden;
+    }
+    .wed-grid .wed-cover{
+      position:relative;
+      min-height:340px;
+      background:#111;
+    }
+    .wed-grid .wed-cover img{width:100%;height:100%;min-height:340px;object-fit:cover;display:block}
+    .wed-meta{padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+    .wed-meta div span{display:block;font-size:12px;font-weight:500}
+    .wed-meta div small{font-size:10px;color:var(--muted)}
+    .wed-meta .archive-links{gap:14px}
+    @media(max-width:640px){.wed-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-line" id="scrollLine" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav" aria-label="Primary">
+    <a class="nav__name" href="index.html">Mariam Kajaia</a>
+
+    <div class="nav__links">
+      <a href="index.html#work"><span>Work</span></a>
+      <a href="index.html#experience"><span>Experience</span></a>
+      <a href="index.html#education"><span>Education</span></a>
+      <a href="index.html#capabilities"><span>Capabilities</span></a>
+      <a href="index.html#about"><span>About</span></a>
+      <a href="index.html#contact"><span>Contact</span></a>
+    </div>
+
+    <div class="nav__right">
+      <span class="available"><i></i><span>Available</span></span>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle night mode"><span class="theme-icon">◐</span><span class="theme-label">Night</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="menuClose">Close</button>
+    <a href="index.html#work">Work</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#capabilities">Capabilities</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <main class="case">
+    <header class="case-hero reveal">
+      <a class="text-link case-hero__back" href="index.html#work">Back to Work</a>
+      <span class="project__number">Case study 03 / Wedding experiences</span>
+      <h1>Five Weddings.<br><em>Five Identities.</em></h1>
+      <p class="case-hero__dek">
+        Five real couples, five live sites, one underlying system of RSVP, maps, schedules, countdowns,
+        music, galleries, multilingual UI, animations and guest management, rebuilt in a different visual
+        language every time so no two invitations feel templated.
+      </p>
+
+      <dl class="project__facts">
+        <div><dt>Role</dt><dd>Concept, Art Direction, Front-End, Content</dd></div>
+        <div><dt>Scope</dt><dd>5 independent live projects, 2025–2026</dd></div>
+      </dl>
+    </header>
+
+    <section class="case-block reveal">
+      <span class="case-block__label">THE SYSTEM</span>
+      <div class="case-block__body">
+        <h2>Repeatable <em>capability</em>. Non-repeatable <em>design.</em></h2>
+        <p>
+          Every wedding site needs the same practical pieces. How do I RSVP, where is it, when does it start,
+          what's the dress code, where are the photos afterward. I built that capability once, as a set of
+          patterns I trust: RSVP handling, schedules, countdowns, maps, galleries and bilingual copy. What
+          changes each time is everything a guest actually notices, meaning palette, type, pacing and motion, because
+          the art direction is what makes a couple feel like the invitation is theirs.
+        </p>
+      </div>
+    </section>
+
+    <section class="case-block reveal">
+      <span class="case-block__label">FEATURES ACROSS THE COLLECTION</span>
+      <div class="case-block__body">
+        <h2>What each site actually <em>does.</em></h2>
+      </div>
+      <div class="case-feature-grid">
+        <article><h3>RSVP</h3><p>Guest response capture built into the flow, not bolted on as a separate form.</p></article>
+        <article><h3>Maps & Schedule</h3><p>Venue, timing and day-of logistics presented so guests don't have to ask.</p></article>
+        <article><h3>Countdown</h3><p>A live countdown that builds anticipation from the moment the link is opened.</p></article>
+        <article><h3>Music & Galleries</h3><p>Ambient audio and photo galleries used selectively, per couple's taste.</p></article>
+        <article><h3>Multilingual UI</h3><p>Georgian / English content structured for both scripts from the start.</p></article>
+        <article><h3>Guest Management</h3><p>A lightweight way for couples to track who has responded, without a spreadsheet mess.</p></article>
+      </div>
+    </section>
+
+    <section class="reveal" style="padding:0 var(--gutter);margin-bottom:24px">
+      <span class="case-block__label" style="display:block;margin-bottom:10px">THE FIVE PROJECTS</span>
+    </section>
+
+    <div class="wed-grid reveal">
+      <article>
+        <div class="wed-cover"><img src="assets/aseet3.png" alt="Giorgi and Mariami wedding invitation" loading="lazy"></div>
+        <div class="wed-meta">
+          <div><span>01 / Giorgi & Mariami</span><small>Wax-seal monogram</small></div>
+          <div class="archive-links">
+            <a href="https://digitalinvitee.github.io/giorgi-da-mariami/" target="_blank" rel="noreferrer">Live</a>
+            <a href="https://github.com/digitalinvitee/giorgi-da-mariami" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="wed-cover"><img src="assets/asset2.png" alt="Oto and Tako wedding invitation" loading="lazy"></div>
+        <div class="wed-meta">
+          <div><span>02 / Oto & Tako</span><small>Vintage scrapbook</small></div>
+          <div class="archive-links">
+            <a href="https://digitalinvitee.github.io/oto-da-tako/" target="_blank" rel="noreferrer">Live</a>
+            <a href="https://github.com/digitalinvitee/oto-da-tako" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="wed-cover"><img src="assets/aaset1.png" alt="Davit and Keto wedding invitation" loading="lazy"></div>
+        <div class="wed-meta">
+          <div><span>03 / Davit & Keto</span><small>Classic stationery</small></div>
+          <div class="archive-links">
+            <a href="https://digitalinvitee.github.io/davitidaketo/" target="_blank" rel="noreferrer">Live</a>
+            <a href="https://github.com/digitalinvitee/davitidaketo" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="wed-cover"><img src="assets/asset5.png" alt="Ketevan and Davit wedding invitation" loading="lazy"></div>
+        <div class="wed-meta">
+          <div><span>04 / Ketevan & Davit</span><small>Editorial schedule</small></div>
+          <div class="archive-links">
+            <a href="https://digitalinvitee.github.io/ketevananddavit/" target="_blank" rel="noreferrer">Live</a>
+            <a href="https://github.com/digitalinvitee/ketevananddavit" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="wed-cover"><img src="assets/aseet4.png" alt="Keso and Gio wedding invitation" loading="lazy"></div>
+        <div class="wed-meta">
+          <div><span>05 / Keso & Gio</span><small>Illustrated / playful</small></div>
+          <div class="archive-links">
+            <a href="https://digitalinvitee.github.io/keso-and-gio-wedding/" target="_blank" rel="noreferrer">Live</a>
+            <a href="https://github.com/digitalinvitee/keso-and-gio-wedding" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <section class="case-block reveal">
+      <span class="case-block__label">WHY IT MATTERS</span>
+      <div class="case-block__body">
+        <h2>Five clients, five sign-offs, <em>zero copy-paste feel.</em></h2>
+        <p>
+          Each of these was a real couple with real opinions about their own wedding, which is a harder brief
+          than a single portfolio piece, because the "client" changes every time and the bar for feeling personal
+          resets with them. Running five of these end to end is what taught me to separate the parts of a build
+          that should be systematised from the parts that should never be.
+        </p>
+      </div>
+    </section>
+
+    <nav class="case-nav reveal">
+      <a href="index.html#work">Back to work</a>
+      <a href="casa-gelso.html">Next: Casa Gelso</a>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Mariam Kajaia</span>
+    <span>Design, Development, QA, Business</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

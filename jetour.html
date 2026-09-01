@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Case study of JETOUR Georgia, a bilingual event invitation built as a working digital product by Mariam Kajaia.">
+  <title>JETOUR Georgia, Case Study / Mariam Kajaia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Noto+Sans+Georgian:wght@400;500;600&family=Noto+Serif+Georgian:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-line" id="scrollLine" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav" aria-label="Primary">
+    <a class="nav__name" href="index.html">Mariam Kajaia</a>
+
+    <div class="nav__links">
+      <a href="index.html#work"><span>Work</span></a>
+      <a href="index.html#experience"><span>Experience</span></a>
+      <a href="index.html#education"><span>Education</span></a>
+      <a href="index.html#capabilities"><span>Capabilities</span></a>
+      <a href="index.html#about"><span>About</span></a>
+      <a href="index.html#contact"><span>Contact</span></a>
+    </div>
+
+    <div class="nav__right">
+      <span class="available"><i></i><span>Available</span></span>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle night mode"><span class="theme-icon">◐</span><span class="theme-label">Night</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="menuClose">Close</button>
+    <a href="index.html#work">Work</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#capabilities">Capabilities</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <main class="case">
+    <header class="case-hero reveal">
+      <a class="text-link case-hero__back" href="index.html#work">Back to Work</a>
+      <span class="project__number">Case study 02 / JETOUR Georgia</span>
+      <h1><em>JETOUR</em> Georgia</h1>
+      <p class="case-hero__dek">
+        A static event invitation became a working brand touchpoint: a responsive, bilingual digital
+        product with RSVP capture, a live guest list and its own testing pass, built for a real client
+        deadline rather than a portfolio brief.
+      </p>
+
+      <dl class="project__facts">
+        <div><dt>Role</dt><dd>Product Concept, Creative Direction, Front-End, QA</dd></div>
+        <div><dt>Client</dt><dd>Commercial project, brand event, Georgia</dd></div>
+        <div><dt>Languages</dt><dd>Georgian / English (bilingual UX)</dd></div>
+        <div><dt>Stack</dt><dd>HTML, CSS, JavaScript, Google Apps Script, Google Sheets</dd></div>
+      </dl>
+
+      <div class="project-actions">
+        <a class="text-link" href="https://digitalinvitee.github.io/JETOUR/" target="_blank" rel="noreferrer">View Live</a>
+        <a class="text-link" href="https://github.com/digitalinvitee/JETOUR" target="_blank" rel="noreferrer">View Code</a>
+      </div>
+    </header>
+
+    <a class="case-cover" href="https://digitalinvitee.github.io/JETOUR/" target="_blank" rel="noreferrer">
+      <img src="https://raw.githubusercontent.com/digitalinvitee/JETOUR/main/cover.jpg" alt="JETOUR Georgia live site" loading="lazy">
+    </a>
+
+    <section class="case-block reveal">
+      <span class="case-block__label">THE CONTEXT</span>
+      <div class="case-block__body">
+        <h2>An invitation that needed to <em>do more</em> than announce a date.</h2>
+        <p>
+          The brief started as a request for a digital invitation for a brand event. But a one-off static page
+          couldn't answer the questions the client actually had: who is confirmed, who still needs a reminder,
+          and how do guests get the practical details of location, schedule and language without a phone call.
+        </p>
+        <p>
+          I reframed the deliverable from "a page" to "a small product": something the client could point
+          people to, that would quietly collect the data they needed, and that would work the same whether
+          a guest opened it in Georgian or English.
+        </p>
+      </div>
+    </section>
+
+    <section class="case-block reveal">
+      <span class="case-block__label">THE APPROACH</span>
+      <div class="case-block__body">
+        <h2>Design, build and <em>data</em> as one workflow.</h2>
+        <p>
+          I owned the project end to end: art direction and layout, the front-end build, the RSVP logic, and
+          the QA pass before handoff. Because I was designer, developer and tester on the same project, I could
+          make trade-offs quickly. I simplified the RSVP form the moment I noticed, while testing on my own
+          phone, that a multi-step flow was friction guests wouldn't tolerate on an invitation.
+        </p>
+      </div>
+      <div class="case-feature-grid">
+        <article>
+          <h3>Bilingual UX</h3>
+          <p>Georgian and English content structured from the same layout rather than bolted on afterward, so the type-setting and rhythm hold up in both scripts.</p>
+        </article>
+        <article>
+          <h3>RSVP Google Sheets</h3>
+          <p>A lightweight RSVP form posts through Google Apps Script into a live Sheet, giving the client a real-time guest list with no backend to maintain.</p>
+        </article>
+        <article>
+          <h3>Countdown & logistics</h3>
+          <p>A live countdown, event schedule and location details, built to stay legible and fast on mobile, where most guests actually opened the link.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-block reveal">
+      <span class="case-block__label">QA</span>
+      <div class="case-block__body">
+        <h2>Treated like a <em>product</em>, not a one-off page.</h2>
+        <p>
+          Before handoff I ran a manual QA pass across breakpoints and both languages: form validation and
+          submission edge cases, broken states on slow connections, and cross-checking that every Sheet entry
+          matched what was submitted in the browser. That habit of building something and then trying to
+          break it comes directly from the QA training I did alongside front-end development.
+        </p>
+      </div>
+    </section>
+
+    <section class="case-block reveal">
+      <span class="case-block__label">OUTCOME</span>
+      <div class="case-block__body">
+        <h2>Shipped, used, and <em>extended.</em></h2>
+        <p>
+          The site went live and ran the client's guest communication and RSVP collection for the event. The
+          same approach was later reused for a second brand activation, <a class="text-link" href="index.html#work" style="margin-top:0">JETOUR / II</a>,
+          which is the clearest proof that the first build held up well enough to repeat.
+        </p>
+      </div>
+    </section>
+
+    <nav class="case-nav reveal">
+      <a href="casa-gelso.html">Back: Casa Gelso</a>
+      <a href="weddings.html">Next: five wedding experiences</a>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Mariam Kajaia</span>
+    <span>Design, Development, QA, Business</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
